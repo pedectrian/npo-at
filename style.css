@@ -60,7 +60,8 @@ a {
 .navmenu ul li.menu-item-has-children {
     background: url("images/downArrow.png") right 17px no-repeat;
 }
-.navmenu ul.nav-menu > li > a {
+.navmenu ul.nav-menu > li > a,
+.navmenu div.nav-menu > ul > li > a{
 	font-family: 'PT Sans', sans-serif;
     color: #fff;
     font-size: 14px;

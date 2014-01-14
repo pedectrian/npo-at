@@ -44,7 +44,7 @@ get_header();
                      data-cycle-desc="Человеческий интеллект с давних пор создавал образы механизмов, повышающих физические возможности людей. К концу 20 века и образ искусственного интеллекта перестал быть фантастикой. Антропоморфная роботизированная система представляет собой вершину творческих научных усилий постижения человеком природы во всех ее проявлениях.<a class='news-list-more' href='http://npo-at.com/projects/education'>Подробнее</a>"
                     <?php endif; ?>>
                 <div class="cycle-pager"></div>
-                <div class="cycle-overlay"></div>
+                <?php if(in_array($_SERVER['HTTP_HOST'], $allowedHosts)) : ?><div class="cycle-overlay"></div><?php endif; ?>
 			</div>
 		</div>
 		<br class="clear" />
