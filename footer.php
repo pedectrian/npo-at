@@ -12,7 +12,7 @@
 			<div class="container_16">
 				<div class="grid_16 footer">
 					<div class="grid_5 site-name alpha" >
-						&nbsp;&nbsp; npo-at.com &copy; 2011
+                        &copy; АНДРОИДНАЯ ТЕХНИКА  2011 - <?php echo date('Y'); ?>
 					</div>
 					<div class="grid_3">
 						&nbsp;

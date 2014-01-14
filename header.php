@@ -48,24 +48,26 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="header-wrapper">
-			<div class="container_16 header">
-				<div class="grid_6 logo">
-					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				</div>
-				<div class="grid_5">
-					&nbsp;
-				</div>
-				<div class="grid_2" style='text-align: center;margin-top: 22px;'>
-					<a href='http://npo-at.com' <?php if($_SERVER['HTTP_HOST'] == 'npo-at.com'){ echo 'style="font-weight: bold;"';} ?>>РУС</a>
-					<a href='http://en.npo-at.com' <?php if($_SERVER['HTTP_HOST'] == 'en.npo-at.com'){ echo 'style="font-weight: bold;"';} ?>>ENG</a>
-				</div>
-				<div class="grid_3 search">
-					<?php get_search_form(); ?>
-				</div>
-				<br class="clear" />
-				<div class="grid_12 navmenu">
-                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-				</div>
-				<br class="clear" />
-			</div>
+            <div class="menu-bg-wrapper">
+                <div class="container_16 header">
+                    <div class="grid_6 logo">
+                        <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                    </div>
+                    <div class="grid_5">
+                        &nbsp;
+                    </div>
+                    <div class="grid_2" style='text-align: center;margin-top: 22px;'>
+                        <a href='http://npo-at.com' <?php if($_SERVER['HTTP_HOST'] == 'npo-at.com'){ echo 'style="font-weight: bold;"';} ?>>РУС</a>
+                        <a href='http://en.npo-at.com' <?php if($_SERVER['HTTP_HOST'] == 'en.npo-at.com'){ echo 'style="font-weight: bold;"';} ?>>ENG</a>
+                    </div>
+                    <div class="grid_3 search">
+                        <?php get_search_form(); ?>
+                    </div>
+                    <br class="clear" />
+                    <div class="grid_16 navmenu">
+                        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+                    </div>
+                    <br class="clear" />
+                </div>
+            </div>
 		</div>
