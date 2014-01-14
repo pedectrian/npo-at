@@ -7,13 +7,15 @@
 						<ul class="child-pages">
 							<?php
 								if($post->post_parent) {
-									$children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+                                    $parent = $post->post_parent;
 								} else {
-									$children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+									$parent = $post->ID;
 								}
-								if ($children) { 
-									echo $children;
-								}
+                                if($post->post_name == 'news' || $post->post_name == 'news-2') {
+                                    wp_list_categories( "title_li=&child_of=4" );
+                                } else {
+                                    wp_list_pages("title_li=&child_of=".$parent);
+                                }
 							?>
 						</ul>
 					</div>

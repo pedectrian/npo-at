@@ -78,7 +78,7 @@ get_header();
 		<h2><?php if($_SERVER['HTTP_HOST'] == 'npo-at.com') : ?>В фокусе<?php else: ?> In focus <?php endif; ?></h2>
 		<div class="main-page-cycle cycle-slideshow"
              data-cycle-fx=scrollHorz
-             data-cycle-timeout=1000 >
+             data-cycle-timeout=7000 >
 			<?php 
 				// if there are $attachments display infocus slider
 				if ( $attachments ) {
